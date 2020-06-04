@@ -17,6 +17,8 @@ Step 3.) visit http://localhost:8080 to view it in the browser.
 
 Find live version at https://dreamy-mcclintock-80247e.netlify.app/
 
+Find screenshots at [./screenshots](./screenshots)
+
 ### Folder Structure
 ```
 Sleek
@@ -56,5 +58,7 @@ Sleek
 │       └── theme.js
 └── webpack.config.js
 ```
+
+`# actions and reducers directory contains all actions and reducers required by redux setup.`
 
 ### About app
