@@ -103,7 +103,7 @@ export const StyleExpandableButton = styled.div`
     position: absolute;
     font-size: ${theme.fontSizes.h3};
     font-weight: 900;
-    color: ${theme.colors.darkgrey};
+    color: ${theme.colors.darkestGrey};
     top: 0;
     right: 0;
     margin-top: 10px;

@@ -16,6 +16,7 @@ export const StyledButton = styled.button`
     font-size: ${theme.fontSizes.sm};
     font-weight: 200;
     cursor: pointer;
+    background-color: ${theme.colors.darkgrey};
 `;
 
 export const StyledTagInput = styled.input.attrs(props => ({

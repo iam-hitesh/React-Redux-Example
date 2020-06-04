@@ -74,7 +74,7 @@ const StudentCard = (props) => {
         const tagSearch = [];
         const query = searchQuery.toLowerCase();
 
-        const filteredTags = students.tags.filter(function(tag) {
+        students.tags.filter(function(tag) {
             if (tag.title.toLowerCase().indexOf(query) !== -1) {
                 tagSearch.push(parseInt(tag.studentId));
 
