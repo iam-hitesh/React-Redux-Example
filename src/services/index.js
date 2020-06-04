@@ -1,1 +1,0 @@
-export { getStudents } from './students';
