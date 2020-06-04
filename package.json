@@ -1,14 +1,32 @@
 {
-  "name": "sleek",
+  "name": "react-redux-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "##### Dependencies that was added to the app - React - Redux - Redux Thunk",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development",
     "build": "webpack --mode production"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iam-hitesh/React-Redux-Example.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "thunk",
+    "async",
+    "react-redux",
+    "react-project",
+    "javascript",
+    "projects"
+  ],
+  "author": "iam-hitesh",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iam-hitesh/React-Redux-Example/issues"
+  },
+  "homepage": "https://github.com/iam-hitesh/React-Redux-Example#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "prop-types": "^15.7.2",
