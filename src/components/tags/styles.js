@@ -29,7 +29,7 @@ export const StyledTagInput = styled.input.attrs(props => ({
     border-bottom: 2px solid ${theme.colors.darkgrey};
     padding: 10px 0;
     display: block;
-    color: ${theme.colors.darkestGrey};
+    color: ${theme.colors.lightBlack};
     font-size: ${theme.fontSizes.lg};
     font-weight: 100;
     padding: ${props => props.padding};

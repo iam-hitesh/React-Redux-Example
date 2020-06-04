@@ -6,6 +6,7 @@ const theme = {
         darkgrey: DARK_BG,
         darkestGrey: '#bbbbbb',
         white: '#fff',
+        lightBlack: '#313131',
         black: '#000',
     },
 

@@ -81,7 +81,7 @@ export const StyledSearchBox = styled.input.attrs(props => ({
     display: block;
     width: 95%;
     margin: 1%;
-    color: ${theme.colors.darkestGrey};
+    color: ${theme.colors.lightBlack};
     font-size: ${theme.fontSizes.lg};
     font-weight: 100;
     padding: ${props => props.padding};
