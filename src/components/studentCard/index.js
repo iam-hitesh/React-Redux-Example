@@ -118,50 +118,45 @@ const StudentCard = (props) => {
                 }}
             />
             {
-                !students.displayStudents ? (
-                    <center>
-                        <h2>No Results Found</h2>
-                    </center>
-                ) : (
-                    students.displayStudents.map((student, id) => {
-                        return(
-                            <StyledProfile key={id}>
-                                <StyledImageContainer>
-                                    <StyledImage
-                                        src={student.pic}
-                                        alt={student.firstName}
-                                    />
-                                </StyledImageContainer>
+                students.displayStudents &&
+                students.displayStudents.map((student, id) => {
+                    return(
+                        <StyledProfile key={id}>
+                            <StyledImageContainer>
+                                <StyledImage
+                                    src={student.pic}
+                                    alt={student.firstName}
+                                />
+                            </StyledImageContainer>
 
-                                <StyledDetails>
-                                    <h2>{`${student.firstName} ${student.lastName}`}</h2>
+                            <StyledDetails>
+                                <h2>{`${student.firstName} ${student.lastName}`}</h2>
 
-                                    <StyledOtherDetails>
-                                        <span>{`Email: ${student.email}`}</span>
-                                        <span>{`Company: ${student.company}`}</span>
-                                        <span>{`Skill: ${student.skill}`}</span>
-                                        <span>{`Average: ${averageMarks(student.grades)}%`}</span>
+                                <StyledOtherDetails>
+                                    <span>{`Email: ${student.email}`}</span>
+                                    <span>{`Company: ${student.company}`}</span>
+                                    <span>{`Skill: ${student.skill}`}</span>
+                                    <span>{`Average: ${averageMarks(student.grades)}%`}</span>
 
-                                        {
-                                            showTag === student.id ? (
-                                                <Tags
-                                                    student={student}
-                                                    showTag={showTag}
-                                                />
-                                            ) : ("")
-                                        }
-                                    </StyledOtherDetails>
-                                </StyledDetails>
+                                    {
+                                        showTag === student.id ? (
+                                            <Tags
+                                                student={student}
+                                                showTag={showTag}
+                                            />
+                                        ) : ("")
+                                    }
+                                </StyledOtherDetails>
+                            </StyledDetails>
 
-                                <StyleExpandableButton
-                                    onClick={() => setTag(showTag === student.id ? -1 : student.id)}
-                                >
-                                    +
-                                </StyleExpandableButton>
-                            </StyledProfile>
-                        )
-                    })
-                )
+                            <StyleExpandableButton
+                                onClick={() => setTag(showTag === student.id ? -1 : student.id)}
+                            >
+                                { showTag === student.id ? ("-") : ("+") }
+                            </StyleExpandableButton>
+                        </StyledProfile>
+                    )
+                })
             }
         </StyledProfilesCard>
     )

@@ -3,7 +3,9 @@ import {theme} from "../../styles";
 
 export const StyledContent = styled.div`
     margin-top: 10px;
-    transition: height 1s;
+    transition: ${theme.transition};
+    -moz-transition: ${theme.transition};
+    easing: ${theme.easing};
 `;
 
 export const StyledButton = styled.button`

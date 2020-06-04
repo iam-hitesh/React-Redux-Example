@@ -101,7 +101,7 @@ export const StyledSearchBox = styled.input.attrs(props => ({
 export const StyleExpandableButton = styled.div`
     text-align: right;
     position: absolute;
-    font-size: ${theme.fontSizes.h3};
+    font-size: ${theme.fontSizes.h2};
     font-weight: 900;
     color: ${theme.colors.darkestGrey};
     top: 0;
