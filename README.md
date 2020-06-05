@@ -1,6 +1,7 @@
-## Sleep application
+## Sleek application
 
 ##### Dependencies that was added to the app
+(A React-Redux based application)
 - React
 - Redux
 - Redux Thunk
@@ -10,14 +11,23 @@
 Follow these steps to run the application
 
 ```
-Step 1.) npm install (For installing dependencies needed for the project)
-Step 2.) npm start (Runs the app in the development mode.)
-Step 3.) visit http://localhost:8080 to view it in the browser.
+npm install 
+
+(For installing dependencies needed for the project)
 ```
 
-Find live version at https://dreamy-mcclintock-80247e.netlify.app/
+```
+npm start 
 
-Find screenshots at [./screenshots](./screenshots)
+(Runs the app in the development mode.)
+```
+
+```
+visit http://localhost:8080 to view it in the browser.
+```
+
+- Find live version at https://dreamy-mcclintock-80247e.netlify.app/
+- Find screenshots at [./screenshots](./screenshots)
 
 ### Folder Structure
 ```
@@ -60,5 +70,3 @@ Sleek
 ```
 
 `# actions and reducers directory contains all actions and reducers required by redux setup.`
-
-### About app
